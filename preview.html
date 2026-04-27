@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jiacheng Liu</title>
+<style>
+  :root {
+    --fg: #1c1d1f;
+    --muted: #6c757d;
+    --accent: #b509ac;
+    --bg: #ffffff;
+    --border: #e9ecef;
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6; margin: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  nav { max-width: 930px; margin: 0 auto; padding: 1.4rem 1rem 0;
+    display: flex; justify-content: space-between; align-items: center; }
+  nav .brand { font-weight: 600; font-size: 1.1rem; color: var(--fg); }
+  nav .links a { margin-left: 1.2rem; color: var(--fg); font-size: 0.95rem; }
+  main { max-width: 930px; margin: 0 auto; padding: 1rem; }
+  h1 { font-size: 2.2rem; font-weight: 500; margin: 1rem 0 0.2rem; }
+  .subtitle { color: var(--muted); font-size: 1.05rem; margin-bottom: 1.6rem; }
+  .row { display: flex; gap: 2rem; align-items: flex-start; }
+  .bio { flex: 1 1 auto; }
+  .bio p { margin: 0 0 1rem; }
+  .card { flex: 0 0 240px; }
+  .card .photo { width: 240px; height: 240px; background: #ddd; border-radius: 6px;
+    display: flex; align-items: center; justify-content: center; color: #888;
+    font-size: 0.85rem; text-align: center; padding: 1rem; }
+  .card .caption { font-size: 0.85rem; color: var(--muted); margin-top: 0.6rem;
+    line-height: 1.4; }
+  .socials { text-align: center; margin: 2rem 0 1rem; color: var(--muted); font-size: 0.95rem; }
+  .socials a { margin: 0 0.5rem; }
+  hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0 1.5rem; }
+  h2 { font-size: 1.4rem; font-weight: 500; margin: 0 0 1rem; }
+  .pubs { font-size: 0.95rem; }
+  .pub { padding: 0.8rem 0; border-bottom: 1px solid var(--border); }
+  .pub:last-child { border-bottom: 0; }
+  .pub .title { font-weight: 500; color: var(--fg); }
+  .pub .authors { color: var(--fg); }
+  .pub .authors b { font-weight: 600; }
+  .pub .venue { color: var(--muted); font-style: italic; }
+  .pub .links a { font-size: 0.85rem; color: var(--accent); margin-right: 0.5rem; }
+  .abbr { display: inline-block; min-width: 60px; padding: 2px 8px;
+    background: #f1f3f5; border-radius: 4px; font-size: 0.75rem; color: var(--muted);
+    text-align: center; margin-right: 0.6rem; vertical-align: middle; }
+  footer { max-width: 930px; margin: 2rem auto 1rem; padding: 1rem;
+    border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem;
+    text-align: center; }
+  @media (max-width: 700px) {
+    .row { flex-direction: column-reverse; }
+    .card { align-self: center; }
+  }
+  .preview-banner { background: #fff3bf; padding: 0.6rem 1rem; text-align: center;
+    font-size: 0.85rem; color: #5c4500; border-bottom: 1px solid #ffe066; }
+</style>
+</head>
+<body>
+
+<div class="preview-banner">
+  Static preview of <code>_pages/about.md</code> — approximation of al-folio's about page.
+  Real site requires <code>docker compose up</code> to run Jekyll.
+</div>
+
+<nav>
+  <div class="brand"></div>
+  <div class="links">
+    <a href="#about">about</a>
+    <a href="#publications">publications</a>
+  </div>
+</nav>
+
+<main id="about">
+  <h1>Jiacheng Liu</h1>
+  <div class="subtitle">PhD student · <a href="https://mbzuai.ac.ae/">MBZUAI</a> · advised by <a href="https://zhiqiangshen.com/">Zhiqiang Shen</a>.</div>
+
+  <div class="row">
+    <div class="bio">
+      <p>My research focuses on efficient generative models and agents.</p>
+      <p>Previously MSc at <a href="https://www.ucl.ac.uk/">UCL</a>, advised by <a href="http://www0.cs.ucl.ac.uk/staff/Jun.Wang/">Prof. Jun Wang</a>; part-time research intern at Huawei Noah's Ark Lab, London (2023–2024) with <a href="https://scholar.google.com/citations?user=Y7s8VTAAAAAJ">Dr. Kun Shao</a>.</p>
+    </div>
+    <div class="card">
+      <div class="caption">
+        <p>Abu Dhabi, UAE</p>
+        <p>jiacheng.liu [at] mbzuai.ac.ae</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="socials">
+    <a href="mailto:jiacheng.liu@mbzuai.ac.ae">✉ email</a> ·
+    <a href="https://github.com/Greenoso">github</a> ·
+    <a href="https://scholar.google.com/citations?user=_awln6YAAAAJ">google scholar</a>
+  </div>
+
+  <hr>
+
+  <h2 id="publications">publications</h2>
+  <p style="color: var(--muted); font-size: 0.9rem; margin-top: -0.6rem;">in reversed chronological order.</p>
+
+  <h3 style="font-size: 1.05rem; font-weight: 500; margin: 1.2rem 0 0.4rem; color: var(--muted);">2026</h3>
+  <div class="pubs">
+    <div class="pub">
+      <span class="abbr">arXiv</span>
+      <span class="title">Next-Gen CAPTCHAs: Leveraging the Cognitive Gap for Scalable and Diverse GUI-Agent Defense.</span><br>
+      <span class="authors"><b>Jiacheng Liu</b>, Yaxin Luo, Jiacheng Cui, Xinyi Shang, Xiaohan Zhao, Zhiqiang Shen</span>.
+      <span class="venue">arXiv:2602.09012, 2026.</span>
+      <span class="links"><a href="https://arxiv.org/abs/2602.09012">arXiv</a> · <a href="https://github.com/MetaAgentX/NextGen-CAPTCHAs">code</a> · <a href="https://greenoso.github.io/NextGen-CAPTCHAs_webpage/">project</a></span>
+    </div>
+    <div class="pub">
+      <span class="abbr">CVPR</span>
+      <span class="title">BiGain: Unified Token Compression for Joint Generation and Classification.</span><br>
+      <span class="authors"><b>Jiacheng Liu</b>, Shengkun Tang, Jiacheng Cui, Dongkuan Xu, Zhiqiang Shen</span>.
+      <span class="venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026.</span>
+      <span class="links"><a href="https://arxiv.org/abs/2603.12240">arXiv</a> · <a href="https://github.com/Greenoso/BiGain">code</a></span>
+    </div>
+    <div class="pub">
+      <span class="abbr">arXiv</span>
+      <span class="title">Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems.</span><br>
+      <span class="authors"><b>Jiacheng Liu</b>, Xiaohan Zhao, Xinyi Shang, Zhiqiang Shen</span>.
+      <span class="venue">arXiv:2604.14228, 2026.</span>
+      <span class="links"><a href="https://arxiv.org/abs/2604.14228">arXiv</a> · <a href="https://github.com/VILA-Lab/Dive-into-Claude-Code">code</a> (787★)</span>
+    </div>
+    <div class="pub">
+      <span class="abbr">arXiv</span>
+      <span class="title">Exploring 3D Dataset Pruning.</span><br>
+      <span class="authors">Xiaohan Zhao, Xinyi Shang, <b>Jiacheng Liu</b>, Zhiqiang Shen</span>.
+      <span class="venue">arXiv:2603.00651, 2026.</span>
+      <span class="links"><a href="https://arxiv.org/abs/2603.00651">arXiv</a></span>
+    </div>
+    <div class="pub">
+      <span class="abbr">arXiv</span>
+      <span class="title">From Masks to Pixels and Meaning: A New Taxonomy, Benchmark, and Metrics for VLM Image Tampering.</span><br>
+      <span class="authors">Xinyi Shang, Yi Tang, Jiacheng Cui, Ahmed Elhagry, Salwa K. Al Khatib, Sondos Mahmoud Bsharat, <b>Jiacheng Liu</b>, Xiaohan Zhao, Jing-Hao Xue, Hao Li, Salman Khan, Zhiqiang Shen</span>.
+      <span class="venue">arXiv:2603.20193, 2026.</span>
+      <span class="links"><a href="https://arxiv.org/abs/2603.20193">arXiv</a> · <a href="https://github.com/VILA-Lab/PIXAR">code</a></span>
+    </div>
+    <div class="pub">
+      <span class="abbr">DMLR</span>
+      <span class="title">Mobile-MMLU: A Mobile Intelligence Language Understanding Benchmark.</span><br>
+      <span class="authors">Sondos Mahmoud Bsharat, Mukul Ranjan, Aidar Myrzakhan, <b>Jiacheng Liu</b>, Bowei Guo, Shengkun Tang, Zhuang Liu, Yuanzhi Li, Zhiqiang Shen</span>.
+      <span class="venue">Journal of Data-centric Machine Learning Research (DMLR), 2026.</span>
+      <span class="links"><a href="https://arxiv.org/abs/2503.20786">arXiv</a> · <a href="https://github.com/VILA-Lab/Mobile-MMLU">code</a></span>
+    </div>
+  </div>
+
+  <h3 style="font-size: 1.05rem; font-weight: 500; margin: 1.2rem 0 0.4rem; color: var(--muted);">2025</h3>
+  <div class="pubs">
+    <div class="pub">
+      <span class="abbr">NeurIPS</span>
+      <span class="title">Open CaptchaWorld: A Comprehensive Web-based Platform for Testing and Benchmarking Multimodal LLM Agents.</span><br>
+      <span class="authors">Yaxin Luo, Zhaoyi Li, <b>Jiacheng Liu</b>, Jiacheng Cui, Xiaohan Zhao, Zhiqiang Shen</span>.
+      <span class="venue">Conference on Neural Information Processing Systems (NeurIPS) Datasets and Benchmarks Track, 2025.</span>
+      <span class="links"><a href="https://arxiv.org/abs/2505.24878">arXiv</a> · <a href="https://github.com/MetaAgentX/OpenCaptchaWorld">code</a></span>
+    </div>
+    <div class="pub">
+      <span class="abbr">NeurIPS</span>
+      <span class="title">FADRM: Fast and Accurate Data Residual Matching for Dataset Distillation.</span><br>
+      <span class="authors">Jiacheng Cui, Xinyue Bi, Yaxin Luo, Xiaohan Zhao, <b>Jiacheng Liu</b>, Zhiqiang Shen</span>.
+      <span class="venue">Conference on Neural Information Processing Systems (NeurIPS), 2025.</span>
+      <span class="links"><a href="https://arxiv.org/abs/2506.24125">arXiv</a> · <a href="https://github.com/Jiacheng8/FADRM">code</a></span>
+    </div>
+  </div>
+
+  <h3 style="font-size: 1.05rem; font-weight: 500; margin: 1.2rem 0 0.4rem; color: var(--muted);">2024</h3>
+  <div class="pubs">
+    <div class="pub">
+      <span class="abbr">arXiv</span>
+      <span class="title">Pangu-Agent: A Fine-Tunable Generalist Agent with Structured Reasoning.</span><br>
+      <span class="authors">Filippos Christianos, Georgios Papoudakis, Matthieu Zimmer, Thomas Coste, Zhihao Wu, Jingxuan Chen, Khyati Khandelwal, James Doran, Xidong Feng, <b>Jiacheng Liu</b>, Zheng Xiong, Yicheng Luo, Jianye Hao, Kun Shao, Haitham Bou-Ammar, Jun Wang</span>.
+      <span class="venue">arXiv:2312.14878, 2024.</span>
+      <span class="links"><a href="https://arxiv.org/abs/2312.14878">arXiv</a></span>
+      <div style="font-size: 0.85rem; color: var(--muted); margin-top: 0.2rem;">Work conducted as part-time research intern at Huawei Noah's Ark Lab, London.</div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  Powered by Jekyll with <a href="https://github.com/alshedivat/al-folio">al-folio</a>. Hosted by GitHub Pages.
+</footer>
+</body>
+</html>
