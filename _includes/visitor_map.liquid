@@ -1,15 +1,29 @@
-{% if site.visitor_map.enabled and site.visitor_map.provider == 'clustrmaps' and site.visitor_map.clustrmaps_id %}
+{% assign visitor_map = site.visitor_map %}
+{% assign visitor_map_provider = visitor_map.provider | default: 'clustrmaps' %}
+{% assign visitor_map_widget = visitor_map.widget | default: 'map' %}
+
+{% if visitor_map.enabled %}
   <div class="visitor-map">
     <div class="visitor-map-title">
       <i class="fa-solid fa-location-dot"></i>
       <span>visitor map</span>
     </div>
-    <script
-      {% if site.enable_cookie_consent %}
-        type="text/plain" data-category="analytics"
-      {% endif %}
-      id="clustrmaps"
-      src="https://cdn.clustrmaps.com/map_v2.js?cl={{ site.visitor_map.color | default: 'ffffff' }}&w={{ site.visitor_map.width | default: 220 }}&t={{ site.visitor_map.text | default: 'n' }}&d={{ site.visitor_map.clustrmaps_id }}"
-    ></script>
+    {% if visitor_map_provider == 'mapmyvisitors' and visitor_map_widget == 'globe' and visitor_map.mapmyvisitors_id %}
+      <script
+        {% if site.enable_cookie_consent %}
+          type="text/plain" data-category="analytics"
+        {% endif %}
+        id="mmvst_globe"
+        src="https://mapmyvisitors.com/globe.js?d={{ visitor_map.mapmyvisitors_id }}"
+      ></script>
+    {% elsif visitor_map_provider == 'clustrmaps' and visitor_map.clustrmaps_id %}
+      <script
+        {% if site.enable_cookie_consent %}
+          type="text/plain" data-category="analytics"
+        {% endif %}
+        id="clustrmaps"
+        src="https://cdn.clustrmaps.com/map_v2.js?cl={{ visitor_map.color | default: 'ffffff' }}&w={{ visitor_map.width | default: 220 }}&t={{ visitor_map.text | default: 'n' }}&d={{ visitor_map.clustrmaps_id }}"
+      ></script>
+    {% endif %}
   </div>
 {% endif %}
