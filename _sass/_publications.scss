@@ -107,10 +107,15 @@
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
           margin-left: 0;
+          transition:
+            border-color 0.15s ease,
+            color 0.15s ease,
+            transform 0.15s ease;
 
           &:hover {
             color: var(--global-theme-color);
             border-color: var(--global-theme-color);
+            transform: translateY(-1px);
           }
         }
         a.award.btn {

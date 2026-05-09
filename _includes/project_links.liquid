@@ -1,0 +1,23 @@
+{% assign item = include.project %}
+{% if item.github or item.paper or item.website %}
+  <div class="project-links{% if include.compact %} project-links-compact{% endif %}">
+    {% if item.github %}
+      <a class="project-link" href="{{ item.github }}" aria-label="Code for {{ item.title }}">
+        <i class="fa-brands fa-github"></i>
+        <span>Code</span>
+      </a>
+    {% endif %}
+    {% if item.paper %}
+      <a class="project-link" href="{{ item.paper }}" aria-label="Paper for {{ item.title }}">
+        <i class="fa-solid fa-file-lines"></i>
+        <span>Paper</span>
+      </a>
+    {% endif %}
+    {% if item.website %}
+      <a class="project-link" href="{{ item.website }}" aria-label="Website for {{ item.title }}">
+        <i class="fa-solid fa-globe"></i>
+        <span>Website</span>
+      </a>
+    {% endif %}
+  </div>
+{% endif %}
