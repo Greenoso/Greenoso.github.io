@@ -16,6 +16,14 @@
         id="mmvst_globe"
         src="https://mapmyvisitors.com/globe.js?d={{ visitor_map.mapmyvisitors_id }}"
       ></script>
+    {% elsif visitor_map_provider == 'mapmyvisitors' and visitor_map_widget == 'map' and visitor_map.mapmyvisitors_id %}
+      <script
+        {% if site.enable_cookie_consent %}
+          type="text/plain" data-category="analytics"
+        {% endif %}
+        id="mapmyvisitors"
+        src="https://mapmyvisitors.com/map.js?d={{ visitor_map.mapmyvisitors_id }}&cl={{ visitor_map.color | default: 'ffffff' }}&w={{ visitor_map.width | default: 'a' }}"
+      ></script>
     {% elsif visitor_map_provider == 'clustrmaps' and visitor_map.clustrmaps_id %}
       <script
         {% if site.enable_cookie_consent %}

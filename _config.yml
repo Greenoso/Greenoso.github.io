@@ -415,10 +415,10 @@ enable_video_embedding: false # enables video embedding for bibtex entries. If f
 visitor_map:
   enabled: true
   provider: mapmyvisitors
-  widget: globe
-  mapmyvisitors_id: QlX_vvDo18EiendNN5VNCvqzZWZnYXM583pyRMYrRZ0
+  widget: map
+  mapmyvisitors_id: Wj5JU16joVBGf-IpG9W-9wQb-dWGdjX9Au2dhXCKv9c
   clustrmaps_id:
-  width: 220
+  width: a
   color: ffffff
   text: n
 
