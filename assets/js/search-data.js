@@ -409,7 +409,7 @@ ninja.data = [{
               window.location.href = "/projects/bigain/";
             },},{id: "projects-dive-into-claude-code",
           title: 'Dive into Claude Code',
-          description: "A design-space study of today&#39;s and future AI agent systems.",
+          description: "A design-space study of today&#39;s and future AI agent systems with 2K+ GitHub stars.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/dive-into-claude-code/";
             },},{id: "projects-fadrm",
