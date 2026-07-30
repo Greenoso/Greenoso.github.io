@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dive into Claude Code
-description: A design-space study of today's and future AI agent systems.
+description: A design-space study of today's and future AI agent systems with 2K+ GitHub stars.
 importance: 2
 category: research
 github: https://github.com/VILA-Lab/Dive-into-Claude-Code
