@@ -5,19 +5,82 @@
 @string{icml = {International Conference on Machine Learning (ICML)}}
 @string{neurips = {Conference on Neural Information Processing Systems (NeurIPS)}}
 
-@inproceedings{liu2026nextgen,
+@article{bsharat2026mobilemmlu,
+  abbr        = {DMLR},
+  bibtex_show = {true},
+  title       = {Mobile-{MMLU}: A Mobile Intelligence Language Understanding Benchmark},
+  author      = {Bsharat, Sondos Mahmoud and Ranjan, Mukul and Myrzakhan, Aidar and Liu, Jiacheng and Guo, Bowei and Tang, Shengkun and Liu, Zhuang and Li, Yuanzhi and Shen, Zhiqiang},
+  journal     = {Journal of Data-centric Machine Learning Research (DMLR)},
+  year        = {2026},
+  arxiv       = {2503.20786},
+  html        = {https://arxiv.org/abs/2503.20786},
+  code        = {https://github.com/VILA-Lab/Mobile-MMLU}
+}
+
+@article{chen2026lladaimage,
+  abbr                                     = {arXiv},
+  bibtex_show                              = {true},
+  selected                                 = {true},
+  title                                    = {{LLaDA-Image}: Building Strong Image Generators with Fully Open Training Recipes},
+  author                                   = {Chen, Chuyan and Chen, Haoxing and Chen, Kun and Cheng, Zhenglin and Cui, Long and Fang, Ruishan and Gu, Zhangxuan and Huang, Zhicheng and Lan, Zhenzhong and Lei, Yuanting and Li, Haoquan and Li, Jianguo and Li, Rongchuan and Li, Sidu and Lin, Tao and Liu, Deyuan and Liu, Jiacheng and Liu, Lin and Lou, Yuxuan and Lu, Zhisheng and Ma, Yuxin and Shen, Shuheng and Sun, Peng and Wang, Chaoyang and Wang, Hongjun and Wang, Xiaomei and Wang, Yongxin and Wu, Chengzhang and Wu, Hongru and Xie, Jun},
+  journal                                  = {arXiv preprint arXiv:2609.03796},
+  year                                     = {2026},
+  arxiv                                    = {2609.03796},
+  html                                     = {https://arxiv.org/abs/2609.03796},
+  code                                     = {https://github.com/inclusionAI/LLaDA-Image},
+  image_generator_core_contributors        = {Zhenglin Cheng;Jiacheng Liu;Peng Sun;Jun Xie},
+  understanding_backbone_core_contributors = {Haoxing Chen;Kun Chen;Zhicheng Huang;Xiaomei Wang;Yongxin Wang}
+}
+
+@article{christianos2023panguagent,
+  abbr        = {arXiv},
+  bibtex_show = {true},
+  title       = {Pangu-Agent: A Fine-Tunable Generalist Agent with Structured Reasoning},
+  author      = {Christianos, Filippos and Papoudakis, Georgios and Zimmer, Matthieu and Coste, Thomas and Wu, Zhihao and Chen, Jingxuan and Khandelwal, Khyati and Doran, James and Feng, Xidong and Liu, Jiacheng and Xiong, Zheng and Luo, Yicheng and Hao, Jianye and Shao, Kun and Bou-Ammar, Haitham and Wang, Jun},
+  journal     = {arXiv preprint arXiv:2312.14878},
+  year        = {2023},
+  arxiv       = {2312.14878},
+  html        = {https://arxiv.org/abs/2312.14878},
+  note        = {Work conducted as part-time research intern at Huawei Noah's Ark Lab, London.}
+}
+
+@inproceedings{cui2025fadrm,
   abbr        = {NeurIPS},
   bibtex_show = {true},
-  selected    = {true},
-  title       = {Next-Gen {CAPTCHAs}: Leveraging the Cognitive Gap for Scalable and Diverse {GUI}-Agent Defense},
-  author      = {Liu, Jiacheng and Luo, Yaxin and Cui, Jiacheng and Shang, Xinyi and Zhao, Xiaohan and Shen, Zhiqiang},
+  title       = {{FADRM}: Fast and Accurate Data Residual Matching for Dataset Distillation},
+  author      = {Cui, Jiacheng and Bi, Xinyue and Luo, Yaxin and Zhao, Xiaohan and Liu, Jiacheng and Shen, Zhiqiang},
   booktitle   = neurips,
+  year        = {2025},
+  arxiv       = {2506.24125},
+  html        = {https://arxiv.org/abs/2506.24125},
+  code        = {https://github.com/Jiacheng8/FADRM}
+}
+
+@inproceedings{cui2026hardlabels,
+  abbr        = {ICML},
+  bibtex_show = {true},
+  title       = {Hard Labels In! Rethinking the Role of Hard Labels in Mitigating Local Semantic Drift},
+  author      = {Cui, Jiacheng and Tong, Bingkui and Bi, Xinyue and Zhao, Xiaohan and Liu, Jiacheng and Shen, Zhiqiang},
+  booktitle   = icml,
   year        = {2026},
-  month       = {12},
-  arxiv       = {2602.09012},
-  html        = {https://arxiv.org/abs/2602.09012},
-  code        = {https://github.com/MetaAgentX/NextGen-CAPTCHAs},
-  website     = {https://greenoso.github.io/NextGen-CAPTCHAs_webpage/}
+  month       = {7},
+  arxiv       = {2512.15647},
+  html        = {https://icml.cc/virtual/2026/poster/65258}
+}
+
+@inproceedings{liu2026bigain,
+  abbr               = {CVPR},
+  bibtex_show        = {true},
+  selected           = {true},
+  title              = {BiGain: Unified Token Compression for Joint Generation and Classification},
+  author             = {Liu, Jiacheng and Tang, Shengkun and Cui, Jiacheng and Xu, Dongkuan and Shen, Zhiqiang},
+  booktitle          = cvpr,
+  year               = {2026},
+  arxiv              = {2603.12240},
+  html               = {https://arxiv.org/abs/2603.12240},
+  code               = {https://github.com/Greenoso/BiGain},
+  abstract           = {A training-free, plug-and-play framework that preserves generation quality while improving classification accuracy in accelerated diffusion models. Built on frequency separation: Laplacian-gated token merging plus interpolate-extrapolate KV downsampling.},
+  equal_contributors = {Jiacheng Liu;Shengkun Tang}
 }
 
 @article{liu2026claudecode,
@@ -28,26 +91,48 @@
   author      = {Liu, Jiacheng and Zhao, Xiaohan and Shang, Xinyi and Shen, Zhiqiang},
   journal     = {arXiv preprint arXiv:2604.14228},
   year        = {2026},
-  month       = {10},
   arxiv       = {2604.14228},
   html        = {https://arxiv.org/abs/2604.14228},
   code        = {https://github.com/VILA-Lab/Dive-into-Claude-Code},
   note        = {⭐ 2K+ GitHub stars}
 }
 
-@inproceedings{liu2026bigain,
-  abbr        = {CVPR},
+@inproceedings{liu2026nextgen,
+  abbr               = {ICML},
+  bibtex_show        = {true},
+  selected           = {true},
+  title              = {Next-Gen {CAPTCHAs}: Leveraging the Cognitive Gap for Scalable and Diverse {GUI}-Agent Defense},
+  author             = {Liu, Jiacheng and Luo, Yaxin and Cui, Jiacheng and Shang, Xinyi and Zhao, Xiaohan and Shen, Zhiqiang},
+  booktitle          = icml,
+  year               = {2026},
+  arxiv              = {2602.09012},
+  html               = {https://arxiv.org/abs/2602.09012},
+  code               = {https://github.com/MetaAgentX/NextGen-CAPTCHAs},
+  website            = {https://greenoso.github.io/NextGen-CAPTCHAs_webpage/},
+  equal_contributors = {Jiacheng Liu;Yaxin Luo}
+}
+
+@inproceedings{luo2025captchaworld,
+  abbr        = {NeurIPS},
   bibtex_show = {true},
-  selected    = {true},
-  title       = {BiGain: Unified Token Compression for Joint Generation and Classification},
-  author      = {Liu, Jiacheng and Tang, Shengkun and Cui, Jiacheng and Xu, Dongkuan and Shen, Zhiqiang},
-  booktitle   = cvpr,
+  title       = {Open {CaptchaWorld}: A Comprehensive Web-based Platform for Testing and Benchmarking Multimodal {LLM} Agents},
+  author      = {Luo, Yaxin and Li, Zhaoyi and Liu, Jiacheng and Cui, Jiacheng and Zhao, Xiaohan and Shen, Zhiqiang},
+  booktitle   = {NeurIPS Datasets and Benchmarks Track},
+  year        = {2025},
+  arxiv       = {2505.24878},
+  html        = {https://arxiv.org/abs/2505.24878},
+  code        = {https://github.com/MetaAgentX/OpenCaptchaWorld}
+}
+
+@article{luo2026autodesign,
+  abbr        = {arXiv},
+  bibtex_show = {true},
+  title       = {{AutoDesign}: Meta-Harness Optimization for Long-Horizon Agentic Design},
+  author      = {Luo, Yaxin and Jiang, Haobin and Zou, Jialv and Huang, Xu and Yan, Wenhao and Li, Haodong and Yue, Zhengrong and Li, Jing and Chen, Xiaofu and Zhao, Xiaohan and Liu, Jiacheng and Cui, Jiacheng and Shen, Zhiqiang and Li, Xiaotong},
+  journal     = {arXiv preprint arXiv:2608.13560},
   year        = {2026},
-  month       = {11},
-  arxiv       = {2603.12240},
-  html        = {https://arxiv.org/abs/2603.12240},
-  code        = {https://github.com/Greenoso/BiGain},
-  abstract    = {A training-free, plug-and-play framework that preserves generation quality while improving classification accuracy in accelerated diffusion models. Built on frequency separation: Laplacian-gated token merging plus interpolate-extrapolate KV downsampling.}
+  arxiv       = {2608.13560},
+  html        = {https://arxiv.org/abs/2608.13560}
 }
 
 @inproceedings{luo2026llmsurgeon,
@@ -64,40 +149,30 @@
   code        = {https://github.com/Yaxin9Luo/LLMSurgeon}
 }
 
-@inproceedings{luo2025captchaworld,
-  abbr        = {NeurIPS},
+@inproceedings{shang2026pixar,
+  abbr        = {ECCV},
   bibtex_show = {true},
-  title       = {Open {CaptchaWorld}: A Comprehensive Web-based Platform for Testing and Benchmarking Multimodal {LLM} Agents},
-  author      = {Luo, Yaxin and Li, Zhaoyi and Liu, Jiacheng and Cui, Jiacheng and Zhao, Xiaohan and Shen, Zhiqiang},
-  booktitle   = {NeurIPS Datasets and Benchmarks Track},
-  year        = {2025},
-  arxiv       = {2505.24878},
-  html        = {https://arxiv.org/abs/2505.24878},
-  code        = {https://github.com/MetaAgentX/OpenCaptchaWorld}
+  title       = {From Masks to Pixels and Meaning: A New Taxonomy, Benchmark, and Metrics for {VLM} Image Tampering},
+  author      = {Shang, Xinyi and Tang, Yi and Cui, Jiacheng and Elhagry, Ahmed and Al Khatib, Salwa K. and Bsharat, Sondos Mahmoud and Liu, Jiacheng and Zhao, Xiaohan and Xue, Jing-Hao and Li, Hao and Khan, Salman and Shen, Zhiqiang},
+  year        = {2026},
+  arxiv       = {2603.20193},
+  html        = {https://arxiv.org/abs/2603.20193},
+  code        = {https://github.com/VILA-Lab/PIXAR},
+  booktitle   = {European Conference on Computer Vision (ECCV)}
 }
 
-@inproceedings{cui2025fadrm,
-  abbr        = {NeurIPS},
-  bibtex_show = {true},
-  title       = {{FADRM}: Fast and Accurate Data Residual Matching for Dataset Distillation},
-  author      = {Cui, Jiacheng and Bi, Xinyue and Luo, Yaxin and Zhao, Xiaohan and Liu, Jiacheng and Shen, Zhiqiang},
-  booktitle   = neurips,
-  year        = {2025},
-  arxiv       = {2506.24125},
-  html        = {https://arxiv.org/abs/2506.24125},
-  code        = {https://github.com/Jiacheng8/FADRM}
-}
-
-@article{christianos2024panguagent,
-  abbr        = {arXiv},
-  bibtex_show = {true},
-  title       = {Pangu-Agent: A Fine-Tunable Generalist Agent with Structured Reasoning},
-  author      = {Christianos, Filippos and Papoudakis, Georgios and Zimmer, Matthieu and Coste, Thomas and Wu, Zhihao and Chen, Jingxuan and Khandelwal, Khyati and Doran, James and Feng, Xidong and Liu, Jiacheng and Xiong, Zheng and Luo, Yicheng and Hao, Jianye and Shao, Kun and Bou-Ammar, Haitham and Wang, Jun},
-  journal     = {arXiv preprint arXiv:2312.14878},
-  year        = {2024},
-  arxiv       = {2312.14878},
-  html        = {https://arxiv.org/abs/2312.14878},
-  note        = {Work conducted as part-time research intern at Huawei Noah's Ark Lab, London.}
+@article{zhao2026figmirror,
+  abbr               = {arXiv},
+  bibtex_show        = {true},
+  selected           = {true},
+  title              = {{FigMirror}: Ground It, Code It, Plot It},
+  author             = {Zhao, Xiaohan and Liu, Jiacheng and Luo, Yaxin and Shen, Zhiqiang},
+  journal            = {arXiv preprint arXiv:2608.28814},
+  year               = {2026},
+  arxiv              = {2608.28814},
+  html               = {https://arxiv.org/abs/2608.28814},
+  code               = {https://github.com/VILA-Lab/FigMirror},
+  equal_contributors = {Xiaohan Zhao;Jiacheng Liu}
 }
 
 @inproceedings{zhao2026threedpruning,
@@ -111,40 +186,4 @@
   arxiv       = {2603.00651},
   html        = {https://icml.cc/virtual/2026/poster/62896},
   code        = {https://github.com/XiaohanZhao123/3D-Dataset-Pruning}
-}
-
-@article{shang2026pixar,
-  abbr        = {arXiv},
-  bibtex_show = {true},
-  title       = {From Masks to Pixels and Meaning: A New Taxonomy, Benchmark, and Metrics for {VLM} Image Tampering},
-  author      = {Shang, Xinyi and Tang, Yi and Cui, Jiacheng and Elhagry, Ahmed and Al Khatib, Salwa K. and Bsharat, Sondos Mahmoud and Liu, Jiacheng and Zhao, Xiaohan and Xue, Jing-Hao and Li, Hao and Khan, Salman and Shen, Zhiqiang},
-  journal     = {arXiv preprint arXiv:2603.20193},
-  year        = {2026},
-  arxiv       = {2603.20193},
-  html        = {https://arxiv.org/abs/2603.20193},
-  code        = {https://github.com/VILA-Lab/PIXAR}
-}
-
-@article{bsharat2026mobilemmlu,
-  abbr        = {DMLR},
-  bibtex_show = {true},
-  title       = {Mobile-{MMLU}: A Mobile Intelligence Language Understanding Benchmark},
-  author      = {Bsharat, Sondos Mahmoud and Ranjan, Mukul and Myrzakhan, Aidar and Liu, Jiacheng and Guo, Bowei and Tang, Shengkun and Liu, Zhuang and Li, Yuanzhi and Shen, Zhiqiang},
-  journal     = {Journal of Data-centric Machine Learning Research (DMLR)},
-  year        = {2026},
-  arxiv       = {2503.20786},
-  html        = {https://arxiv.org/abs/2503.20786},
-  code        = {https://github.com/VILA-Lab/Mobile-MMLU}
-}
-
-@inproceedings{cui2026hardlabels,
-  abbr        = {ICML},
-  bibtex_show = {true},
-  title       = {Hard Labels In! Rethinking the Role of Hard Labels in Mitigating Local Semantic Drift},
-  author      = {Cui, Jiacheng and Tong, Bingkui and Bi, Xinyue and Zhao, Xiaohan and Liu, Jiacheng and Shen, Zhiqiang},
-  booktitle   = icml,
-  year        = {2026},
-  month       = {7},
-  arxiv       = {2512.15647},
-  html        = {https://icml.cc/virtual/2026/poster/65258}
 }

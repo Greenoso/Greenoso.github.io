@@ -8,11 +8,11 @@ middle_name:
 last_name: Liu
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  PhD student in Machine Learning at MBZUAI. Research focus: efficient generative models and agents.
+  PhD student in Machine Learning at MBZUAI. Research focus: efficient language and generative models, and self-improving agents.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: jiacheng liu, machine learning, diffusion language models, post-training, MBZUAI
+keywords: jiacheng liu, machine learning, efficient language models, generative models, self-improving agents, diffusion language models, post-training, MBZUAI
 lang: en
 icon: 🧪
 
@@ -325,10 +325,12 @@ filtered_bibtex_keywords:
     code,
     dimensions,
     eprint,
+    equal_contributors,
     google_scholar_id,
     hal,
     html,
     inspirehep_id,
+    image_generator_core_contributors,
     pdf,
     pmid,
     poster,
@@ -336,6 +338,7 @@ filtered_bibtex_keywords:
     selected,
     slides,
     supp,
+    understanding_backbone_core_contributors,
     video,
     website,
   ]
